@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  <script defer src="main.js"></script></head>
+  <body>
+    
+    <!-- Button to open project form -->
+    <button id="new-project-btn">Add New Project</button>
+
+    <!-- Form to create a new project -->
+    <div id="project-form-container" class="form-container">
+        <form id="project-form">
+            <label for="name">Project Name:</label>
+            <input type="text" id="name" required>
+            <button type="submit">Create Project</button>
+        </form>
+    </div>
+
+    <!-- Dropdown to select project -->
+    <select id="project-dropdown">
+        <!-- Dynamically populated -->
+    </select>
+
+    <!-- Button to open list form -->
+    <button id="new-list-btn">Add New List</button>
+
+    <!-- Form to create a new list -->
+    <div id="list-form-container" class="form-container">
+        <form id="list-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" required><br>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea><br>
+            
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" required><br>
+            
+            <label for="priority">Priority:</label>
+            <input type="text" id="priority" required><br>
+            
+            <label for="notes">Notes:</label>
+            <textarea id="notes"></textarea><br>
+            
+            <button type="submit">Add List</button>
+        </form>
+    </div>
+
+    <!-- Container to display lists -->
+    <div id="project-container"></div>
+  </body>
+</html>
